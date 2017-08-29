@@ -1,0 +1,6 @@
+framework module Pods_kangfubaUITests {
+  umbrella header "Pods-kangfubaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

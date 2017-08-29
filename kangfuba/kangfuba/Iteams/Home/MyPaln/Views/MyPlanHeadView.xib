@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GIORGIO SANS-MEDIUM.otf">
+            <string>GiorgioSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyPlanHeadView" customModule="kangfuba" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方案剩余天数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cN-py-Jd2">
+                    <rect key="frame" x="100" y="15" width="175" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="8uJ-A2-UA0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.396078431372549" green="0.41568627450980389" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_plancell" translatesAutoresizingMaskIntoConstraints="NO" id="hVo-tZ-tNc">
+                    <rect key="frame" x="15" y="42" width="345" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="Zxy-t0-gPk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEY-oR-fXx">
+                    <rect key="frame" x="125" y="50" width="125" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="ttP-t2-tSC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GiorgioSans-Medium" family="Giorgio Sans" pointSize="60"/>
+                    <color key="textColor" red="0.25490196079999999" green="0.80784313730000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hVo-tZ-tNc" secondAttribute="trailing" constant="15" id="618-XA-Yse"/>
+                <constraint firstItem="5cN-py-Jd2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="CKg-lO-rCu"/>
+                <constraint firstItem="MEY-oR-fXx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="125" id="SY1-E0-JYD"/>
+                <constraint firstAttribute="trailing" secondItem="MEY-oR-fXx" secondAttribute="trailing" constant="125" id="TXv-Nn-FuQ"/>
+                <constraint firstItem="MEY-oR-fXx" firstAttribute="top" secondItem="5cN-py-Jd2" secondAttribute="bottom" constant="20" id="Uth-3G-eBk"/>
+                <constraint firstItem="hVo-tZ-tNc" firstAttribute="top" secondItem="5cN-py-Jd2" secondAttribute="bottom" constant="12" id="ahp-MI-oV3"/>
+                <constraint firstItem="5cN-py-Jd2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="dCc-IR-rj0"/>
+                <constraint firstItem="hVo-tZ-tNc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="kW1-Zp-02J"/>
+                <constraint firstAttribute="trailing" secondItem="5cN-py-Jd2" secondAttribute="trailing" constant="100" id="rEB-5h-l1J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="numLabel" destination="MEY-oR-fXx" id="EaA-yo-HFq"/>
+            </connections>
+            <point key="canvasLocation" x="-125" y="-96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_plancell" width="345" height="65"/>
+    </resources>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GIORGIO SANS-MEDIUM.otf">
+            <string>GiorgioSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RestView" customModule="kangfuba" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图层列表列出了当前页面的所有图层包括切片和画板，并且每个图层都会有一个小小的预览。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwl-Di-jI2">
+                    <rect key="frame" x="55" y="90" width="265" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="OVv-gI-nfg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CM-sb-1Hk">
+                    <rect key="frame" x="143" y="310" width="90" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="1Qf-No-ZS0"/>
+                        <constraint firstAttribute="width" constant="90" id="gsT-lV-1JH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GiorgioSans-Medium" family="Giorgio Sans" pointSize="65"/>
+                    <state key="normal" backgroundImage="course_rest">
+                        <color key="titleColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="jumpClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="hxf-hu-zUK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHE-o5-xNB">
+                    <rect key="frame" x="143" y="306" width="90" height="90"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="4aF-vs-eV1"/>
+                        <constraint firstAttribute="width" constant="90" id="mjF-9V-uOf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GiorgioSans-Medium" family="Giorgio Sans" pointSize="64"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="AIa-82-IZV" appends="YES" id="GKS-x0-6VW"/>
+                    </connections>
+                </label>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqT-XG-F6I">
+                    <rect key="frame" x="87" y="550" width="200" height="15"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="vNC-2L-OUw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="ehF-VW-War" appends="YES" id="HdE-Gy-Hw6"/>
+                    </connections>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0z-hz-bOk">
+                    <rect key="frame" x="145" y="512" width="85" height="26"/>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="b2V-Gq-zsm"/>
+                        <constraint firstAttribute="width" constant="85" id="gB4-WN-NX8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="跳过休息">
+                        <color key="titleColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="jumpRestClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="P5K-73-wTa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4CM-sb-1Hk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0Ju-yK-U0r"/>
+                <constraint firstAttribute="trailing" secondItem="FqT-XG-F6I" secondAttribute="trailing" constant="88" id="4ni-2W-qo3"/>
+                <constraint firstItem="Iwl-Di-jI2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="90" id="Dot-w8-bdh"/>
+                <constraint firstAttribute="trailing" secondItem="Iwl-Di-jI2" secondAttribute="trailing" constant="55" id="Emx-0k-8mM"/>
+                <constraint firstItem="FqT-XG-F6I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="87" id="Rh7-Nk-P9J"/>
+                <constraint firstItem="H0z-hz-bOk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="V0r-17-Pej"/>
+                <constraint firstItem="vHE-o5-xNB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="W9X-FE-FWy"/>
+                <constraint firstAttribute="bottom" secondItem="FqT-XG-F6I" secondAttribute="bottom" constant="102" id="aBB-be-IBf"/>
+                <constraint firstItem="FqT-XG-F6I" firstAttribute="top" secondItem="H0z-hz-bOk" secondAttribute="bottom" constant="12" id="guk-l4-8ej"/>
+                <constraint firstItem="Iwl-Di-jI2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="55" id="jur-fc-Jxb"/>
+                <constraint firstItem="4CM-sb-1Hk" firstAttribute="top" secondItem="Iwl-Di-jI2" secondAttribute="bottom" constant="160" id="k1v-DY-2ET"/>
+                <constraint firstItem="vHE-o5-xNB" firstAttribute="top" secondItem="Iwl-Di-jI2" secondAttribute="bottom" constant="156" id="sv3-V6-aPy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <connections>
+                <outlet property="jumpBtn" destination="H0z-hz-bOk" id="OyC-oL-iFq"/>
+                <outlet property="nestActionLabel" destination="FqT-XG-F6I" id="taG-mf-5Rg"/>
+                <outlet property="restTimeLabel" destination="vHE-o5-xNB" id="r7X-hV-Mnv"/>
+                <outlet property="second" destination="vHE-o5-xNB" id="PoJ-lE-wwG"/>
+                <outlet property="timeLabelBtn" destination="4CM-sb-1Hk" id="khw-ME-lN9"/>
+                <outlet property="titleLabel" destination="Iwl-Di-jI2" id="R4G-9e-yKt"/>
+            </connections>
+            <point key="canvasLocation" x="-176" y="-64"/>
+        </view>
+        <tapGestureRecognizer id="ehF-VW-War">
+            <connections>
+                <action selector="nestActionClick:" destination="iN0-l3-epB" id="89N-3z-0Ou"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="AIa-82-IZV">
+            <connections>
+                <action selector="secondGesClick:" destination="iN0-l3-epB" id="Yhd-jn-N0o"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="course_rest" width="90" height="90"/>
+    </resources>
+</document>
